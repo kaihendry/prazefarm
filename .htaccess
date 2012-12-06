@@ -1,0 +1,8 @@
+AddType text/html .shtml
+AddHandler server-parsed .shtml
+Options Indexes FollowSymLinks +Includes
+Redirect /interiors http://prazefarm.co.uk/curtains
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.prazefarm\.co\.uk$ [NC]
+RewriteRule ^(.*)$ http://prazefarm.co.uk/$1 [R=301,L]
+DirectoryIndex index.shtml
