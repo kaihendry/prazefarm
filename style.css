@@ -169,5 +169,8 @@ img { margin: 20px; }
 	font-weight: bold;
 	}
 
-    .image { float:left; text-align: center; width: 20em; margin-bottom: 1em;}
-    .image img {display: block; margin:auto; }
+.image { float:left; text-align: center; width: 20em; margin-bottom: 1em;}
+.image img {display: block; margin:auto; }
+
+
+.toc li { list-style-type: none; }
