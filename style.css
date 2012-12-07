@@ -1,4 +1,4 @@
-/* Stylesheet for test tabs, derived from the demo at 
+/* Stylesheet for test tabs, derived from the demo at
    http://www.kalsey.com/tools/csstabs/ */
 
 body {
@@ -23,7 +23,7 @@ body {
 	padding: 0;
 }
 
-	
+
 #menu a:link, #menu a:visited	{
 	background: #eb4;
 	border: 1px solid #632;
@@ -65,9 +65,9 @@ li#nav-4 a {
 
 #menu li {
 	font-variant: small-caps;
-}      
-	
-body.section-1 #menu li#nav-1 a, 
+}
+
+body.section-1 #menu li#nav-1 a,
 body.section-2 #menu li#nav-2 a,
 body.section-3 #menu li#nav-3 a,
 body.section-4 #menu li#nav-4 a {
@@ -84,7 +84,7 @@ body.section-4 #menu li#nav-4 a {
 	width: 100%;
 }
 
-body.section-1 #menu ul#subnav-1, 
+body.section-1 #menu ul#subnav-1,
 body.section-2 #menu ul#subnav-2,
 body.section-3 #menu ul#subnav-3,
 body.section-4 #menu ul#subnav-4 {
@@ -94,7 +94,7 @@ body.section-4 #menu ul#subnav-4 {
 	top: 87px;
 }
 
-body.section-1 #menu ul#subnav-1 a, 
+body.section-1 #menu ul#subnav-1 a,
 body.section-2 #menu ul#subnav-2 a,
 body.section-3 #menu ul#subnav-3 a,
 body.section-4 #menu ul#subnav-4 a {
@@ -142,7 +142,7 @@ h1#banner {
 {color: #CC0033}
 
 #contents A:visited
-{color: #663300} 
+{color: #663300}
 
 #contents A:active
 {color: #CC0033}
