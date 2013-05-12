@@ -19,6 +19,9 @@ OpenWRT Attitude Adjustment 12.09
 TP-LINK TL-WR1043ND
 B0:48:7A:DB:5B:A2
 192.168.1.4
+ |
+Gigaset N300 IP
+192.168.1.114
 
 
 192.168.1.7
