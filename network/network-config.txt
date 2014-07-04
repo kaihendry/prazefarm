@@ -27,10 +27,10 @@ Gigaset N300 IP
 81.187.180.137
 
 
-192.168.1.7
+DHCP/81.187.180.143
 Ycam Knight S White
 
-192.168.1.11
+DHCP/YCWHD5/81.187.180.144
 Ycam Cube HD
 
 # DHCP connect devices
