@@ -1,24 +1,25 @@
-https://clueless.aa.net.uk/ipstats.cgi?username=khw&realm=a
-The dhcp range is from 81.187.180.130-81.187.180.185 so it leaves .186-.190 for your fixed ip machines.
-
 AAISP Gateway https://clueless.aaisp.net.uk/
-Technicolor TG582n
-a4:b1:e9:55:25:2f
+
+http://support.aa.net.uk/Category:ZyXEL_VMG1312
+Configuration: http://s.natalian.org/2015-06-25/configuration-backupsettings.conf
+Allows WAN->LAN port 22 http://s.natalian.org/2015-06-25/1435226560_1246x1058.png
+Traffic view http://s.natalian.org/2015-06-25/1435226647_1246x1058.png
+A0:E4:CB:BF:54:1A
 81.187.180.129 (DHCPD) -----> Tomato v1.28 http://www.polarcloud.com/tomato
    |                       00:14:BF:F2:05:0C
    |                       81.187.180.186
+   |                                |
+   |                       rpicam 81.187.180.190
    |
    |
-   |
-   |
-OpenWRT Attitude Adjustment 12.09
+OpenWRT Attitude Adjustment 12.09 (behind TV)
 TP-LINK TL-WR1043ND
 54:E6:FC:AE:56:3A
 81.187.180.187
    |
    |
    |
-OpenWRT Attitude Adjustment 12.09
+OpenWRT Attitude Adjustment 12.09 (Workshop)
 TP-LINK TL-WR1043ND
 B0:48:7A:DB:5B:A2
 81.187.180.188
@@ -27,14 +28,7 @@ Gigaset N300 IP
 81.187.180.137
 
 
-DHCP/81.187.180.143
-Ycam Knight S White
-
-DHCP/YCWHD5/81.187.180.144
-Ycam Cube HD
-
-# DHCP connect devices
-
-http://81.187.180.129/cgi/b/devs/ov/?be=0&l0=4&l1=0
-Samsung UE46C6530 TV
-Sky box
+Webcams:
+* rpicam (side of cottage) 81.187.180.190
+* foscam (kitchen) 81.187.180.132
+* knight (outside workshop) 81.187.180.141
