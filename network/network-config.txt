@@ -30,5 +30,5 @@ Gigaset N300 IP
 
 Webcams:
 * rpicam (side of cottage) 81.187.180.190
-* foscam (kitchen) 81.187.180.132
+* foscam (kitchen) https://81.187.180.139/
 * knight (outside workshop) 81.187.180.141
