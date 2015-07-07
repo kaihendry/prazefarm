@@ -174,3 +174,5 @@ img { margin: 20px; }
 
 
 .toc li { list-style-type: none; }
+
+img { max-width: 100%; }
