@@ -13,8 +13,8 @@
 m4_include(menu.inc)
 
 <picture>
-<source id=latest type="image/webp" alt="Hourly snapshot from the Webcam every hour from 8AM to 8PM">
-<img src="praze-2015.jpg" alt="Praze Farm, enjoying the Cornish summer in 2015">
+<source id=latest type="image/webp">
+<img id=fallback src="praze-2015.jpg" alt="Praze Farm, enjoying the Cornish summer in 2015">
 </picture>
 
 <ul>
@@ -34,15 +34,18 @@ information.</p>
 <script>
 fetch('http://c.prazefarm.co.uk/latest.txt').then(function (response) {
 if (response.ok) {
-    response.text().then(function (text) {
-        var test = document.getElementById("latest");
-        test.srcset = "http://c.prazefarm.co.uk/" + text;
-    });
+	response.text().then(function (text) {
+		var test = document.getElementById("latest");
+		test.srcset = "http://c.prazefarm.co.uk/" + text;
+		epoch = text.split('/').reverse()[0].slice(0,-6);
+		d = new Date(epoch*1000);
+		document.getElementById("fallback").title = d;
+	});
 } else {
-    console.log('Network response was not ok.');
+	console.log('Network response was not ok.');
 }
 }).catch (function (error) {
-    console.log('There has been a problem with your fetch operation: ' + error.message);
+	console.log('There has been a problem with your fetch operation: ' + error.message);
 });
 </script>
 
