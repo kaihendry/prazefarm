@@ -19,7 +19,7 @@
 
 
 <picture>
-<source alt="Hourly snapshot from the Webcam every hour from 8AM to 8PM" srcset=http://prazefarm.s3-website-eu-west-1.amazonaws.com/index.webp type=image/webp>
+<source alt="Hourly snapshot from the Webcam every hour from 8AM to 8PM" id=latest type=image/webp>
 <img alt="Praze Farm, enjoying the Cornish summer in 2015" src=praze-2015.jpg>
 </picture>
 
@@ -35,6 +35,22 @@
 information.</p>
 
 <p>30 acres in the Cornish countryside. Title number: <a href=CL100440.pdf>CL100440</a></p>
+
+<script>
+fetch('http://c.prazefarm.co.uk/latest.txt').then(function (response) {
+if (response.ok) {
+    response.text().then(function (text) {
+        var test = document.getElementById("latest");
+        test.srcset = "http://c.prazefarm.co.uk/" + text;
+    });
+} else {
+    console.log('Network response was not ok.');
+}
+}).catch (function (error) {
+    console.log('There has been a problem with your fetch operation: ' + error.message);
+});
+</script>
+
 
 </div>
 

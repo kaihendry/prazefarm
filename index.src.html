@@ -13,7 +13,7 @@
 m4_include(menu.inc)
 
 <picture>
-<source srcset="http://prazefarm.s3-website-eu-west-1.amazonaws.com/index.webp" type="image/webp" alt="Hourly snapshot from the Webcam every hour from 8AM to 8PM">
+<source id=latest type="image/webp" alt="Hourly snapshot from the Webcam every hour from 8AM to 8PM">
 <img src="praze-2015.jpg" alt="Praze Farm, enjoying the Cornish summer in 2015">
 </picture>
 
@@ -30,5 +30,21 @@ href="/enquiry">make an enquiry</a> for further
 information.</p>
 
 <p>30 acres in the Cornish countryside. Title number: <a href="CL100440.pdf">CL100440</a></p>
+
+<script>
+fetch('http://c.prazefarm.co.uk/latest.txt').then(function (response) {
+if (response.ok) {
+    response.text().then(function (text) {
+        var test = document.getElementById("latest");
+        test.srcset = "http://c.prazefarm.co.uk/" + text;
+    });
+} else {
+    console.log('Network response was not ok.');
+}
+}).catch (function (error) {
+    console.log('There has been a problem with your fetch operation: ' + error.message);
+});
+</script>
+
 
 m4_include(footer.inc)
