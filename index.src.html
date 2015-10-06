@@ -39,8 +39,7 @@ if (response.ok) {
 		test.srcset = "http://c.prazefarm.co.uk/" + text;
 		epoch = text.split('/').reverse()[0].slice(0,-6);
 		d = new Date(epoch*1000);
-		d.setTimezone("Europe/London");
-		document.getElementById("fallback").title = d;
+		document.getElementById("fallback").title = d.toUTCString();
 	});
 } else {
 	console.log('Network response was not ok.');
