@@ -1,10 +1,10 @@
 /* Stylesheet for test tabs, derived from the demo at
-   http://www.kalsey.com/tools/csstabs/ */
+http://www.kalsey.com/tools/csstabs/ */
 
 body {
 	margin: 10px;
 	font-family: Verdana, Helvetica, Arial, sans-serif;
-	padding: 0px;
+	padding: 0;
 	background: #ed0;
 }
 
@@ -29,10 +29,10 @@ body {
 	border: 1px solid #632;
 	-moz-border-radius-topleft: 9px;
 	-moz-border-radius-topright: 9px;
-    -webkit-border-top-right-radius: 9px;
-    -webkit-border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    border-top-left-radius: 9px;
+	-webkit-border-top-right-radius: 9px;
+	-webkit-border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
 	color: #830;
 	float: left;
 	font-size: small;
@@ -59,9 +59,9 @@ li#nav-1 a,
 li#nav-2 a,
 li#nav-3 a,
 li#nav-4 a {
-	text-transform: uppercase;
+text-transform: uppercase;
 }
-*/
+ */
 
 #menu li {
 	font-variant: small-caps;
@@ -121,20 +121,20 @@ body.section-4 #menu ul#subnav-4 a {
 	border: 1px solid #632;
 	border-top: none;
 	clear: both;
-	margin: 0px;
+	margin: 0;
 	padding: 15px;
 }
 
 /* added */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family:	Georgia, Minion Web, Palatino, Book Antiqua, Utopia, Times New Roman, serif;
+	font-family: Georgia, Minion Web, Palatino, Book Antiqua, Utopia, Times New Roman, serif;
 	color: #CC0033;
-    clear: both;
+	clear: both;
 }
 
 h1#banner {
-        height: 33px;
+	height: 33px;
 	font-size: 24px;
 }
 
@@ -156,18 +156,17 @@ img { margin: 20px; }
 	font-size: 0.5em;
 	margin: 2em;
 	padding: 5px;
-	}
+}
 
 #inline-list p {
 	display: inline;
-	}
+}
 
 #inline-list ul, #inline-list li {
 	display: inline;
-	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	}
+}
 
 .image { float:left; text-align: center; width: 20em; margin-bottom: 1em;}
 .image img {display: block; margin:auto; }
