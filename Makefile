@@ -6,7 +6,7 @@ all: $(OUTFILES)
 
 %.html: %.src.html
 	m4 -PEIinc $< > $(TEMP)
-	anolis $(TEMP) $@
+	toc $(TEMP) > $@
 	rm -f $(TEMP)
 
 clean:

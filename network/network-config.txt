@@ -2,6 +2,7 @@ AAISP Gateway https://clueless.aaisp.net.uk/
 
 http://support.aa.net.uk/Category:ZyXEL_VMG1312
 Configuration: http://s.natalian.org/2015-06-25/configuration-backupsettings.conf
+https://217.169.15.7/
 Allows WAN->LAN port 22 http://s.natalian.org/2015-06-25/1435226560_1246x1058.png
 Traffic view http://s.natalian.org/2015-06-25/1435226647_1246x1058.png
 A0:E4:CB:BF:54:1A
@@ -12,14 +13,14 @@ A0:E4:CB:BF:54:1A
    |                       rpicam 81.187.180.190
    |
    |
-OpenWRT Attitude Adjustment 12.09 (behind TV)
+OpenWRT Attitude Adjustment 15.05.1 (behind TV)
 TP-LINK TL-WR1043ND
 54:E6:FC:AE:56:3A
 81.187.180.187
    |
    |
    |
-OpenWRT Attitude Adjustment 12.09 (Workshop)
+OpenWRT Attitude Adjustment 15.05.1 (Workshop)
 TP-LINK TL-WR1043ND
 B0:48:7A:DB:5B:A2
 81.187.180.188
