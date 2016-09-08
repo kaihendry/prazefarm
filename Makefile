@@ -9,6 +9,14 @@ all: $(OUTFILES)
 	toc $(TEMP) > $@
 	rm -f $(TEMP)
 
+upload:
+	@aws s3 sync --delete --exclude Makefile \
+		--exclude '*.inc' \
+		--exclude '.git/*' \
+		--exclude '*.src.html' \
+		--storage-class STANDARD_IA \
+		--acl public-read . s3://prazefarm/
+
 clean:
 	rm -f $(OUTFILES)
 
