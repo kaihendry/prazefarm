@@ -2,11 +2,12 @@ m4_include(header.inc)
 <title>Praze Farm in Cornwall, UK</title>
 </head>
 <body class="section-1">
-<h1 id="banner">Praze Farm in Cornwall</h1>
+<h1 class="banner">Praze Farm in Cornwall</h1>
 m4_include(menu.inc)
 
 <picture>
-<img id=fallback src="praze-2015.jpg" alt="Praze Farm, enjoying the Cornish summer in 2015">
+<source type="image/webp" srcset="/assets/praze-2015.webp">
+<img width=2048 height=1371 src="/assets/praze-2015.jpg" alt="Praze Farm, enjoying the Cornish summer in 2015">
 </picture>
 
 <ul>
@@ -19,7 +20,7 @@ m4_include(menu.inc)
 
 <p>Ute <a href="/curtains/">makes curtains with her interior furnishing business</a>. Please <a href="/enquiry">make an enquiry</a> for further information.</p>
 
-<p>30 acres in the Cornish countryside. Title number: <a href="CL100440.pdf">CL100440</a></p>
+<p>30 acres in the Cornish countryside. Title number: <a href="/assets/CL100440.pdf">CL100440</a></p>
 
 <script>
 fetch('http://c.prazefarm.co.uk/latest.txt').then(function (response) {
