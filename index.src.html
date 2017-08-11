@@ -1,43 +1,20 @@
 m4_include(header.inc)
+<link rel="canonical" href="https://www.prazefarm.co.uk/" />
 <title>Praze Farm in Cornwall, UK</title>
+<meta name="description" content="Praze Farm is the family home of the Hendry family. We offer our guest cottage and interior furnishings services.">
 </head>
 <body class="section-1">
 <h1 class="banner">Praze Farm in Cornwall</h1>
 m4_include(menu.inc)
 
-<picture>
-<source type="image/webp" srcset="/assets/praze-2015.webp">
-<img width=2048 height=1371 src="/assets/praze-2015.jpg" alt="Praze Farm, enjoying the Cornish summer in 2015">
-</picture>
+<img src="https://res.cloudinary.com/hendry/image/upload/v1502462444/36349927081_d32cf5ae7f_o_qessh6.jpg" alt="Praze Farm in 2017">
 
-<ul>
-<li>
-<a href="https://www.flickr.com/photos/tags/prazefarm/">Praze Farm pictures</a>
-</li>
-</ul>
+<p><a href="https://www.flickr.com/photos/tags/prazefarm/">Praze Farm pictures</a></p>
 
 <p>When you visit Cornwall you should stay in our <a href="/cottage/">Cornish cottage</a>.</p>
 
 <p>Ute <a href="/curtains/">makes curtains with her interior furnishing business</a>. Please <a href="/enquiry">make an enquiry</a> for further information.</p>
 
 <p>30 acres in the Cornish countryside. Title number: <a href="/assets/CL100440.pdf">CL100440</a></p>
-
-<script>
-fetch('http://c.prazefarm.co.uk/latest.txt').then(function (response) {
-if (response.ok) {
-	response.text().then(function (text) {
-		var test = document.getElementById("latest");
-		test.srcset = "http://c.prazefarm.co.uk/" + text;
-		epoch = text.split('/').reverse()[0].slice(0,-6);
-		d = new Date(epoch*1000);
-		document.getElementById("fallback").title = d.toUTCString();
-	});
-} else {
-	console.log('Network response was not ok.');
-}
-}).catch (function (error) {
-	console.log('There has been a problem with your fetch operation: ' + error.message);
-});
-</script>
 
 m4_include(footer.inc)
