@@ -1,35 +1,27 @@
-AAISP Gateway https://clueless.aaisp.net.uk/
+AAISP Gateway https://control.aa.net.uk/editline.cgi?ID=16286
 
-http://support.aa.net.uk/Category:ZyXEL_VMG1312
-Configuration: http://s.natalian.org/2015-06-25/configuration-backupsettings.conf
-https://217.169.15.7/
-Allows WAN->LAN port 22 http://s.natalian.org/2015-06-25/1435226560_1246x1058.png
-Traffic view http://s.natalian.org/2015-06-25/1435226647_1246x1058.png
-A0:E4:CB:BF:54:1A
-81.187.180.129 (DHCPD) -----> Tomato v1.28 http://www.polarcloud.com/tomato
+https://natalian.org/2017/08/20/Choosing_Mikrotik_over_Ubiquiti/
+https://s.natalian.org/2017-12-08/config.txt
+ssh hendry@house.prazefarm.co.uk
+house.prazefarm.co.uk (DHCPD) -----> Tomato v1.28 http://www.polarcloud.com/tomato
    |                       00:14:BF:F2:05:0C
    |                       81.187.180.186
-   |                                |
-   |                       rpicam 81.187.180.190
+   |
+RouterBOARD 952Ui-5ac2nD (tv) https://s.natalian.org/2017-08-04/tv.png
+ssh admin@81.187.180.146
+64:D1:54:4F:34:8A
+64:D1:54:4F:34:89
    |
    |
-OpenWRT Attitude Adjustment 15.05.1 (behind TV)
-TP-LINK TL-WR1043ND
-54:E6:FC:AE:56:3A
-81.187.180.187
-   |
-   |
-   |
-OpenWRT Attitude Adjustment 15.05.1 (Workshop)
-TP-LINK TL-WR1043ND
-B0:48:7A:DB:5B:A2
-81.187.180.188
+RouterBOARD 952Ui-5ac2nD (workshop) https://s.natalian.org/2017-08-04/workshop.png
+ssh admin@81.187.180.150
+E4:8D:8C:B2:90:83
+E4:8D:8C:B2:90:82
  |
 Gigaset N300 IP
 81.187.180.137
 
 
 Webcams:
-* rpicam (side of cottage) 81.187.180.190
 * foscam (kitchen) https://81.187.180.139/
 * knight (outside workshop) 81.187.180.141
