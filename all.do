@@ -1,4 +1,4 @@
 find -name "*.html.in" | while read src
 do
-	echo ${src%.*}
+	echo public/${src%.*}
 done | xargs redo-ifchange

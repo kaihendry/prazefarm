@@ -1,2 +1,3 @@
-redo-ifchange *.inc $2.html.in
-m4 -PEIinc < $2.html.in | toc
+src="${2#public/}"
+redo-ifchange *.inc $src.html.in
+m4 -PEIinc < $src.html.in | toc
