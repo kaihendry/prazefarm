@@ -1,2 +1,2 @@
-redo-ifchange $2.m4-processed
-toc $2.m4-processed
+redo-ifchange *.inc $2.html.in
+m4 -PEIinc < $2.html.in | toc
