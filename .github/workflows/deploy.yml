@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: kaihendry/actions/goredo
+      - uses: kaihendry/actions/goredo@main
       - name: redo
         run: redo
