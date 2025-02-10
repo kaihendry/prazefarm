@@ -15,10 +15,6 @@ m4_include(menu.inc)
 
 <nav data-fill-with="table-of-contents" id="toc"></nav>
 
-<h1 id="booking">Booking</h1>
-
-<p>For prices and availability, please <a href="https://www.cottages.com/cottages/praze-cottage-tmy">book through our our agents</a>.</p>
-
 <h1 id="location">Location</h1>
 
 <p>
