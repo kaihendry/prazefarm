@@ -20,6 +20,6 @@ jobs:
           role-to-assume: arn:aws:iam::407461997746:role/github-actions-Role-56IHHM969DKJ
           aws-region: ap-southeast-1
       - run: go install github.com/kaihendry/toc/cmd/toc@latest
-      - run: sudo apt install -y m4
+      - run: sudo apt install -y m4 fd
       - uses: kaihendry/actions/goredo@main
       - run: redo upload
