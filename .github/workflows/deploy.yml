@@ -10,7 +10,13 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::407461997746:role/github-actions-Role-56IHHM969DKJ
+          aws-region: ap-southeast-1
+      - run: go install github.com/kaihendry/toc/cmd/toc@latest
+      - run: sudo apt install -y m4
       - uses: kaihendry/actions/goredo@main
-      - name: redo
-        run: redo
+      - run: redo upload
